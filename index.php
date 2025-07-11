@@ -74,7 +74,6 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST'){
     <script src="https://cdn.tailwindcss.com/"></script>
 </head>
 <body>
-    
     <main class="container mx-auto">
         <div class="grid place-items-center h-screen">
             <h1 class="text-3xl font-bold">Ajouter une exposition</h1>
