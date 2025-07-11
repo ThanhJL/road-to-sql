@@ -33,7 +33,6 @@ function connect(): PDO
     return $connexion;
 }
 
-
 // Traitement de la requête POST
 
     // Récupération ses données de la requête POST
@@ -56,7 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST'){
     header('Location: /?message=' . $message);
     // Traitement des données pour la requête SQL
 
-
     // Création de la requête SQL
 
     // Exécution de la requête SQL
@@ -64,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST'){
     // Affichage d'un message en fonction de l'enregistrement en base de données
 
 }
-
 
 ?>
 
