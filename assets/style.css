@@ -1,0 +1,32 @@
+:root {
+    /* CSS HEX */
+    --pale-azure: #6ccff6ff;
+    --rich-black: #001011ff;
+    --pale-purple: rgb(241, 236, 247);
+
+    /* SCSS Gradient */
+    --gradient-top: linear-gradient(0deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-right: linear-gradient(90deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-bottom: linear-gradient(180deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-left: linear-gradient(270deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-top-right: linear-gradient(45deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-bottom-right: linear-gradient(135deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-top-left: linear-gradient(225deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-bottom-left: linear-gradient(315deg, #6ccff6ff, #001011ff, #e5d9f2ff);
+    --gradient-radial: radial-gradient(#6ccff6ff, #001011ff, #e5d9f2ff);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.35rem;
+    background: var(--pale-purple);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--rich-black);
+}
+
+.rich-black { color: var(--rich-black); }
+.pale-azure { color: var(--pale-azure); }
+.pale-purple { color: var(--pale-purple); }
