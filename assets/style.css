@@ -1,32 +1,44 @@
 :root {
-    /* CSS HEX */
     --pale-azure: #6ccff6ff;
     --rich-black: #001011ff;
     --pale-purple: rgb(241, 236, 247);
-
-    /* SCSS Gradient */
-    --gradient-top: linear-gradient(0deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-right: linear-gradient(90deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-bottom: linear-gradient(180deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-left: linear-gradient(270deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-top-right: linear-gradient(45deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-bottom-right: linear-gradient(135deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-top-left: linear-gradient(225deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-bottom-left: linear-gradient(315deg, #6ccff6ff, #001011ff, #e5d9f2ff);
-    --gradient-radial: radial-gradient(#6ccff6ff, #001011ff, #e5d9f2ff);
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.35rem;
-    background: var(--pale-purple);
+    font-family: 'Open Sans', sans-serif;
+    @apply text-lg bg-gradient-to-br from-neutral-50 to-slate-50 text-gray-700;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Manrope', sans-serif;
     color: var(--rich-black);
+    text-align: center;
 }
+
+h1 { @apply text-3xl md:text-5xl lg:text-7xl; }
+h2 { @apply text-2xl md:text-4xl lg:text-5xl; }
+h3 { @apply text-xl md:text-3xl lg:text-4xl; }
+h4 { @apply text-lg md:text-2xl lg:text-3xl; }
+h5 { @apply text-base md:text-lg lg:text-xl; }
+h6 { @apply text-sm md:text-base lg:text-lg; }
 
 .rich-black { color: var(--rich-black); }
 .pale-azure { color: var(--pale-azure); }
 .pale-purple { color: var(--pale-purple); }
+
+
+.expo-title {
+    background-image: url('/assets/images/hello.jpg'); 
+    background-position: center center; 
+    background-size: cover;
+}
+
+.expo-count {
+    background-image: url('/assets/images/expos.jpg');
+    background-position: center;
+}
+
+.expo-city {
+    background-image: url('/assets/images/villes.jpg'); 
+    background-position: center;
+}

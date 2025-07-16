@@ -61,4 +61,30 @@ class Database
 
         return $db->connect()->query($query)->fetchAll();
     }
+
+    /**
+     * Méthode (fonction) pour compter le nombre
+     * d'enregistrements dans une table spécifique
+     * @return int
+     */
+    static public function count(?string $table): int
+    {
+        $db = new Database();
+        $query = "SELECT COUNT(*) FROM $table";
+
+        return $db->connect()->query($query)->fetchColumn();
+    }
+
+    /**
+     * Méthode (fonction) pour récupérer un tableau
+     * issue d'une jointure entre expositions et villes
+     * @return array
+     */
+    static public function getAllJoin(): array
+    {
+        $db = new Database();
+        $query = "SELECT expositions.title, expositions.date, expositions.description AS exposition_id, city.name, city.country AS city_id FROM expositions INNER JOIN city ON expositions.city_id = city.id";
+
+        return $db->connect()->query($query)->fetchAll();
+    }
 }

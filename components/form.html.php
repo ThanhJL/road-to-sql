@@ -1,3 +1,6 @@
+<h4 class="text-center mb-4 font-semibold">
+    Ajouter une exposition à la liste
+</h4>
 <form action="/form.php" method="post">
     <label for="Titre" class="relative">
         <span class="text-sm font-medium text-gray-700"> Titre </span>
@@ -5,7 +8,6 @@
             type="text"
             id="Titre"
             name="Titre"
-            value="L'expo du futur"
             class="peer mt-0.5 w-full rounded border p-2 shadow sm:text-sm" required />
     </label>
     <label for="Date">
@@ -14,7 +16,6 @@
             type="date"
             id="Date"
             name="Date"
-            value="2025-07-14"
             class="mt-0.5 w-full rounded border p-2 shadow sm:text-sm" required />
     </label>
     <label for="Ville">
@@ -31,12 +32,13 @@
             <textarea
                 id="Description"
                 name="Description"
-                class="mt-0.5 w-full resize-none rounded border shadow sm:text-sm"
-                rows="4" required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, sint.</textarea>
+                class="mt-0.5 p-2 w-full resize-none rounded border shadow sm:text-sm"
+                rows="4" required></textarea>
         </label>
 
         <div class="mt-1.5 flex items-center justify-end gap-2">
             <button
+                id="effacer"
                 type="button"
                 class="rounded border border-transparent px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900">
                 Effacer
